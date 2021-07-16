@@ -34,3 +34,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 gitignore updated
 // still old .docker key visible
+
+## Set vercel or awsS3
+status 
+ - vercel
+ - S3
