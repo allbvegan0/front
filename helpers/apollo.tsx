@@ -49,16 +49,16 @@ const _session = () => {
 };
 
 // wsLink
-const wsLink = process.browser
-  ? new WebSocketLink({
-      // if you instantiate in the server, the error will be thrown
-      uri: `ws://localhost:4000/graphql`,
-      options: {
-        reconnect: true,
-        timeout: 30000
-      },
-    })
-  : null;
+// const wsLink = process.browser
+//   ? new WebSocketLink({
+//       // if you instantiate in the server, the error will be thrown
+//       uri: `ws://localhost:4000/graphql`,
+//       options: {
+//         reconnect: true,
+//         timeout: 30000
+//       },
+//     })
+//   : null;
 
 
 // authLink
@@ -88,7 +88,7 @@ const _link = process.browser
           definition.operation === "subscription"
         );
       },
-      wsLink,
+      // wsLink,
       // linkError as any,
       createUploadLink({
         uri: uri,

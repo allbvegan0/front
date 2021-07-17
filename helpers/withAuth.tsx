@@ -1,4 +1,5 @@
 
+import { getSession } from "next-auth/client";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
@@ -15,7 +16,13 @@ const withAuth = (WrappedComponent) => {
   return (props) => {
     const [user, setSession] = useState(null);
     var loading =false
-    const authState = useSession()
+    const session = getSession()
+    // const authState = useSession()
+    const authState = session
+
+
+
+
     const _authState = JSON.stringify(authState)
     useEffect(() => {
       let mount = true

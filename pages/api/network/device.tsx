@@ -1,5 +1,9 @@
 export default async (req, res) => {
   const f = await fetch(`http://localhost:4000/user`);
+
+  // const f = await prisma.device.create({
+  //   device_id: shortId()
+  // })
   const data = await f.json();
 
   if (!data) {
@@ -15,3 +19,7 @@ export default async (req, res) => {
     props: { data },
   };
 };
+function shortId() {
+  throw new Error("Function not implemented.");
+}
+
