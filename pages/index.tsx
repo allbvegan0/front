@@ -39,7 +39,7 @@ export default function Home(props) {
         <Box fontSize={["sm", "md", "md", "md"]} minWidth="380">
         {/* <Description >जंमौशधिमंन्त्रतप:समधिजा:सिद्धय: ।।४.º.॰॰॰।।१।।</Description> */}
 
-          <Message>Welcome to </Message>
+          <Message>Welcome to 2 </Message>
           <Logo />
 
           <Center>
